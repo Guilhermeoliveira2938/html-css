@@ -41,13 +41,13 @@ header{
     min-height: 150px;
     text-align: center;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    padding-top: 40px;
 }
 
 header > h1{
     color: white;
     font-weight: normal;
     font-family:var(--font-destaque);
-    padding-top: 40px;
     margin-bottom: 20px;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
@@ -61,7 +61,7 @@ header > p{
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 
 }
