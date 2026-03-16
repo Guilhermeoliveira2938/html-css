@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/*Typical device breakpoints
+
+tablet:  768px
+desktop: 1024px
+tv: 1200px
+*/
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-phone.jpg);
+    }
+
+    main {
+        border: 3px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+    content: 'Esse artigo foi impresso atraves do site https://github.com/Guilhermeoliveira2938';
+    }
+
+    img#smartphone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 768px){
+    
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#smartphone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width:992px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#smartphone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#smartphone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
